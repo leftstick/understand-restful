@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Understand RESTful API</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+			  <section data-markdown>
+					<script type="text/template">
+						# REST
+
+						##### 软件设计风格的前世今生
+
+						<small>
+                Created by <a href="https://github.com/leftstick">leftstick</a> / <a href="http://weibo.com/1837649133">@右领军大都督</a>
+            </small>
+					</script>
+        </section>
+        
+        <section data-markdown>
+          <script type="text/template">
+            #### 关于我
+            
+            ![](img/qrcode3.png)
+
+            Powered by: [Artistic QR](https://github.com/sylnsfar/qrcode)
+          </script>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## 正确拼写
+              
+              RESTful
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## 拆分
+              
+              `RESTful`由两部分组成，`REST` + `ful`
+
+              `REST` = `Representational State Transfer`
+            </script>
+          </section>
+
+          <section data-markdown>
+              <script type="text/template">
+                ## 什么是REST
+                
+                `REST`是一种软件设计的风格或者说思想。其概念由[Roy Fielding](https://en.wikipedia.org/wiki/Roy_Fielding)在2000年首次提出，并迅速挤占市场，成为主流三大WEB交互方案之一。与[SOAP](https://en.wikipedia.org/wiki/SOAP)和[XML-RPC](https://en.wikipedia.org/wiki/XML-RPC)并驾齐驱，并几成超越之势
+              </script>
+          </section>
+
+          <section data-markdown>
+              <script type="text/template">
+                ## 什么是RESTful
+                
+                `REST`风格提出了一系列的规则、约束。一个软件当被设计满足了所有`REST`风格的规则、约束时，我们称这个软件架构为`RESTful`
+              </script>
+          </section>
+
+          <section data-markdown>
+              <script type="text/template">
+                ## REST规则、约束
+                
+                * 使用HTTP，或者HTTPS
+                * 编程语言无关
+                * Client 和 Server 之间的交互无状态
+                * 面向资源，每个资源对应一个唯一的URI
+              </script>
+          </section>
+        </section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
