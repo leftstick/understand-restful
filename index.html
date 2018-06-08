@@ -64,11 +64,14 @@
         <section>
           <section data-markdown>
             <script type="text/template">
-              ## 正确拼写
+              ## 正确拼写 ##
               
               RESTful
+							
+              并且 REST !== rest
             </script>
-          </section>
+					</section>
+					
           <section data-markdown>
             <script type="text/template">
               ## 拆分
@@ -81,7 +84,7 @@
 
           <section data-markdown>
               <script type="text/template">
-                ## 什么是REST
+                ## REST到底什么鬼
                 
                 `REST`是一种软件设计的风格或者说思想。其概念由[Roy Fielding](https://en.wikipedia.org/wiki/Roy_Fielding)在2000年首次提出，并迅速挤占市场，成为主流三大WEB交互方案之一。与[SOAP](https://en.wikipedia.org/wiki/SOAP)和[XML-RPC](https://en.wikipedia.org/wiki/XML-RPC)并驾齐驱，并几成超越之势
               </script>
@@ -89,7 +92,7 @@
 
           <section data-markdown>
               <script type="text/template">
-                ## 什么是RESTful
+                那RESTful呢？
                 
                 `REST`风格提出了一系列的规则、约束。一个软件当被设计满足了所有`REST`风格的规则、约束时，我们称这个软件架构为`RESTful`
               </script>
@@ -104,6 +107,39 @@
                 * Client 和 Server 之间的交互无状态
                 * 面向资源，每个资源对应一个唯一的URI
               </script>
+          </section>
+          <section data-markdown>
+              <script type="text/template">
+                ## 总结
+                
+                `URL`定位资源，用`HTTP`动词（`GET`, `POST`, `DELETE`, `DETC`）描述操作
+              </script>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## 我们要干什么？
+
+              其实REST不重要，RESTful也不重要。重要的是，如何能设计出符合RESTful价值的API，并将其实践
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## 常见表达
+
+              `GET` - 用来获取资源
+
+              `POST` - 用来新建资源
+
+              `PUT` - 用来更新资源
+
+              `PATCH` - 也是更新资源哦
+              
+              `DELETE` - 用来删除资源
+
+            </script>
           </section>
         </section>
 
